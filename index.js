@@ -32,6 +32,12 @@ app.post("/FlightAPI", function (req, res) {
         let travelDate = req.body.DateOfTravel;
         let noOfTickets = req.body.Tickets;
         let ticketno = commonFiles.generateTicket(prefix);
+        let getJSON = commonFiles.BookFlightTicket(boardingPoint, destination, travelDate, noOfTickets, ticketno);
+
+        console.log(getJSON);
+        
+        //Write JSON
+        commonFiles.writeJSON();
 
         console.log('Flight Book Ticket');
 

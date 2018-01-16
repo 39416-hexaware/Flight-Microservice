@@ -1,3 +1,4 @@
+const fs = require('fs');
 // const FlightAPIKEY = 'sl5zmz3g1w';
 var api = '';
 
@@ -39,11 +40,58 @@ var APIList = {
 };
 
 var generateTicket = function (prefix) {
-    var rn = Math.floor(Math.random()*90000) + 10000;
-    var result = prefix.toUpperCase().substring(0,5) + rn;
+    var rn = Math.floor(Math.random() * 90000) + 10000;
+    var result = prefix.toUpperCase().substring(0, 5) + rn;
     console.log(result);
     return result;
 };
 
+var BookFlightTicket = function (boardingPoint, destination, travelDate, noOfTickets, ticketno) {
+    return {
+        "ticketnumber": ticketno,
+        "airport": {
+            "code": "CHN",
+            "name": "Chennai, CH: Chennai International"
+        },
+        "statistics": {
+            "flights": {
+                "status": "Scheduled",
+                "departure": boardingPoint,
+                "destination": destination,
+                "totaltickets": noOfTickets
+            }
+        },
+        "date": {
+            "day": travelDate.split('-')[2],
+            "year": travelDate.split('-')[0],
+            "month": travelDate.split('-')[1]
+        },
+        "carrier": {
+            "code": "AI",
+            "name": "Air India"
+        }
+    }
+}
+
+function writeJSON(JSONobj) {
+    console.log('Inside json write');
+    obj.result.push(JSONobj);
+
+    var json = JSON.stringify(obj);
+
+    fs.readFile('../data/airlines.json', 'utf8', function readFileCallback(err, data) {
+        if (err) {
+            console.log(err);
+        } else {
+            obj = JSON.parse(data); //now it an object
+            obj.result.push(JSONobj); //add some data
+            json = JSON.stringify(obj); //convert it back to json
+            fs.writeFile('../data/airlines.json', json, 'utf8', callback); // write it back 
+        }
+    });
+}
+
 module.exports.APIList = APIList;
 module.exports.generateTicket = generateTicket;
+module.exports.BookFlightTicket = BookFlightTicket;
+module.exports.writeJSON = writeJSON;

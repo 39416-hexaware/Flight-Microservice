@@ -9,7 +9,7 @@ const data = require('./data/airlines.json');
 app = express();
 //Create express object
 
-var port = process.env.PORT || 5000;
+var port = process.env.PORT || 7002;
 // var port = 7002;
 //Assign port
 app.use(express.static(__dirname));

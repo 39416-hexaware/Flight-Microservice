@@ -1,0 +1,402 @@
+[
+  {
+    "ticketnumber" : PLANE12345,
+    "airport": {
+      "code": "ATL", 
+      "name": "Atlanta, GA: Hartsfield-Jackson Atlanta International"
+    }, 
+    "statistics": {
+      "flights": {
+        "cancelled": 5, 
+        "on time": 561, 
+        "total": 752, 
+        "delayed": 186, 
+        "diverted": 0
+      }, 
+      "# of delays": {
+        "late aircraft": 18, 
+        "weather": 28, 
+        "security": 2, 
+        "national aviation system": 105, 
+        "carrier": 34
+      }, 
+      "minutes delayed": {
+        "late aircraft": 1269, 
+        "weather": 1722, 
+        "carrier": 1367, 
+        "security": 139, 
+        "total": 8314, 
+        "national aviation system": 3817
+      }
+    }, 
+    "time": {
+      "label": "2003/6", 
+      "year": 2003, 
+      "month": 6
+    }, 
+    "carrier": {
+      "code": "AA", 
+      "name": "American Airlines Inc."
+    }
+  }, 
+  {
+    "ticketnumber" : PLANE67890,
+    "airport": {
+      "code": "BOS", 
+      "name": "Boston, MA: Logan International"
+    }, 
+    "statistics": {
+      "flights": {
+        "cancelled": 7, 
+        "on time": 1034, 
+        "total": 1266, 
+        "delayed": 225, 
+        "diverted": 0
+      }, 
+      "# of delays": {
+        "late aircraft": 46, 
+        "weather": 24, 
+        "security": 2, 
+        "national aviation system": 84, 
+        "carrier": 69
+      }, 
+      "minutes delayed": {
+        "late aircraft": 3043, 
+        "weather": 1783, 
+        "carrier": 4201, 
+        "security": 45, 
+        "total": 12139, 
+        "national aviation system": 3067
+      }
+    }, 
+    "time": {
+      "label": "2003/6", 
+      "year": 2003, 
+      "month": 6
+    }, 
+    "carrier": {
+      "code": "AA", 
+      "name": "American Airlines Inc."
+    }
+  }, 
+  {
+    "ticketnumber" : PLANE13579,
+    "airport": {
+      "code": "BWI", 
+      "name": "Baltimore, MD: Baltimore/Washington International Thurgood Marshall"
+    }, 
+    "statistics": {
+      "flights": {
+        "cancelled": 1, 
+        "on time": 490, 
+        "total": 593, 
+        "delayed": 101, 
+        "diverted": 1
+      }, 
+      "# of delays": {
+        "late aircraft": 25, 
+        "weather": 20, 
+        "security": 0, 
+        "national aviation system": 38, 
+        "carrier": 18
+      }, 
+      "minutes delayed": {
+        "late aircraft": 1600, 
+        "weather": 1332, 
+        "carrier": 1058, 
+        "security": 0, 
+        "total": 5698, 
+        "national aviation system": 1708
+      }
+    }, 
+    "time": {
+      "label": "2003/6", 
+      "year": 2003, 
+      "month": 6
+    }, 
+    "carrier": {
+      "code": "AA", 
+      "name": "American Airlines Inc."
+    }
+  }, 
+  {
+    "ticketnumber" : PLANE24680,
+    "airport": {
+      "code": "CLT", 
+      "name": "Charlotte, NC: Charlotte Douglas International"
+    }, 
+    "statistics": {
+      "flights": {
+        "cancelled": 4, 
+        "on time": 151, 
+        "total": 203, 
+        "delayed": 48, 
+        "diverted": 0
+      }, 
+      "# of delays": {
+        "late aircraft": 10, 
+        "weather": 10, 
+        "security": 2, 
+        "national aviation system": 10, 
+        "carrier": 17
+      }, 
+      "minutes delayed": {
+        "late aircraft": 653, 
+        "weather": 742, 
+        "carrier": 968, 
+        "security": 127, 
+        "total": 3048, 
+        "national aviation system": 558
+      }
+    }, 
+    "time": {
+      "label": "2003/6", 
+      "year": 2003, 
+      "month": 6
+    }, 
+    "carrier": {
+      "code": "AA", 
+      "name": "American Airlines Inc."
+    }
+  }, 
+  {
+    "ticketnumber" : PLANE39416,
+    "airport": {
+      "code": "DCA", 
+      "name": "Washington, DC: Ronald Reagan Washington National"
+    }, 
+    "statistics": {
+      "flights": {
+        "cancelled": 5, 
+        "on time": 793, 
+        "total": 947, 
+        "delayed": 147, 
+        "diverted": 2
+      }, 
+      "# of delays": {
+        "late aircraft": 26, 
+        "weather": 25, 
+        "security": 0, 
+        "national aviation system": 53, 
+        "carrier": 43
+      }, 
+      "minutes delayed": {
+        "late aircraft": 1566, 
+        "weather": 1484, 
+        "carrier": 2048, 
+        "security": 3, 
+        "total": 7868, 
+        "national aviation system": 2767
+      }
+    }, 
+    "time": {
+      "label": "2003/6", 
+      "year": 2003, 
+      "month": 6
+    }, 
+    "carrier": {
+      "code": "AA", 
+      "name": "American Airlines Inc."
+    }
+  }, 
+  {
+    "ticketnumber" : PLANE39402,
+    "airport": {
+      "code": "DEN", 
+      "name": "Denver, CO: Denver International"
+    }, 
+    "statistics": {
+      "flights": {
+        "cancelled": 1, 
+        "on time": 591, 
+        "total": 750, 
+        "delayed": 157, 
+        "diverted": 1
+      }, 
+      "# of delays": {
+        "late aircraft": 24, 
+        "weather": 19, 
+        "security": 1, 
+        "national aviation system": 70, 
+        "carrier": 43
+      }, 
+      "minutes delayed": {
+        "late aircraft": 1329, 
+        "weather": 1193, 
+        "carrier": 2098, 
+        "security": 46, 
+        "total": 7446, 
+        "national aviation system": 2780
+      }
+    }, 
+    "time": {
+      "label": "2003/6", 
+      "year": 2003, 
+      "month": 6
+    }, 
+    "carrier": {
+      "code": "AA", 
+      "name": "American Airlines Inc."
+    }
+  }, 
+  {
+    "ticketnumber" : PLANE39400,
+    "airport": {
+      "code": "DFW", 
+      "name": "Dallas/Fort Worth, TX: Dallas/Fort Worth International"
+    }, 
+    "statistics": {
+      "flights": {
+        "cancelled": 153, 
+        "on time": 9913, 
+        "total": 12276, 
+        "delayed": 2144, 
+        "diverted": 66
+      }, 
+      "# of delays": {
+        "late aircraft": 601, 
+        "weather": 67, 
+        "security": 14, 
+        "national aviation system": 1070, 
+        "carrier": 393
+      }, 
+      "minutes delayed": {
+        "late aircraft": 36086, 
+        "weather": 4787, 
+        "carrier": 31999, 
+        "security": 459, 
+        "total": 117195, 
+        "national aviation system": 43864
+      }
+    }, 
+    "time": {
+      "label": "2003/6", 
+      "year": 2003, 
+      "month": 6
+    }, 
+    "carrier": {
+      "code": "AA", 
+      "name": "American Airlines Inc."
+    }
+  }, 
+  {
+    "ticketnumber" : PLANE99999,
+    "airport": {
+      "code": "DTW", 
+      "name": "Detroit, MI: Detroit Metro Wayne County"
+    }, 
+    "statistics": {
+      "flights": {
+        "cancelled": 3, 
+        "on time": 491, 
+        "total": 576, 
+        "delayed": 82, 
+        "diverted": 0
+      }, 
+      "# of delays": {
+        "late aircraft": 18, 
+        "weather": 11, 
+        "security": 0, 
+        "national aviation system": 30, 
+        "carrier": 22
+      }, 
+      "minutes delayed": {
+        "late aircraft": 1043, 
+        "weather": 791, 
+        "carrier": 1029, 
+        "security": 0, 
+        "total": 3922, 
+        "national aviation system": 1059
+      }
+    }, 
+    "time": {
+      "label": "2003/6", 
+      "year": 2003, 
+      "month": 6
+    }, 
+    "carrier": {
+      "code": "AA", 
+      "name": "American Airlines Inc."
+    }
+  }, 
+  {
+    "ticketnumber" : PLANE77777,
+    "airport": {
+      "code": "EWR", 
+      "name": "Newark, NJ: Newark Liberty International"
+    }, 
+    "statistics": {
+      "flights": {
+        "cancelled": 7, 
+        "on time": 675, 
+        "total": 835, 
+        "delayed": 149, 
+        "diverted": 4
+      }, 
+      "# of delays": {
+        "late aircraft": 23, 
+        "weather": 8, 
+        "security": 0, 
+        "national aviation system": 77, 
+        "carrier": 41
+      }, 
+      "minutes delayed": {
+        "late aircraft": 1705, 
+        "weather": 603, 
+        "carrier": 2092, 
+        "security": 0, 
+        "total": 7783, 
+        "national aviation system": 3383
+      }
+    }, 
+    "time": {
+      "label": "2003/6", 
+      "year": 2003, 
+      "month": 6
+    }, 
+    "carrier": {
+      "code": "AA", 
+      "name": "American Airlines Inc."
+    }
+  }, 
+  {
+    "ticketnumber" : PLANE22222,
+    "airport": {
+      "code": "FLL", 
+      "name": "Fort Lauderdale, FL: Fort Lauderdale-Hollywood International"
+    }, 
+    "statistics": {
+      "flights": {
+        "cancelled": 1, 
+        "on time": 511, 
+        "total": 658, 
+        "delayed": 146, 
+        "diverted": 0
+      }, 
+      "# of delays": {
+        "late aircraft": 24, 
+        "weather": 10, 
+        "security": 1, 
+        "national aviation system": 71, 
+        "carrier": 40
+      }, 
+      "minutes delayed": {
+        "late aircraft": 1599, 
+        "weather": 481, 
+        "carrier": 1765, 
+        "security": 18, 
+        "total": 6181, 
+        "national aviation system": 2318
+      }
+    }, 
+    "time": {
+      "label": "2003/6", 
+      "year": 2003, 
+      "month": 6
+    }, 
+    "carrier": {
+      "code": "AA", 
+      "name": "American Airlines Inc."
+    }
+  }
+]

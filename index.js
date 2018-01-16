@@ -1,9 +1,10 @@
 //imports
 var express = require('express');
 var bodyParser = require('body-parser');
-var request = require('request');
+var requestAPI = require('request');
 var async = require('async');
 const commonFiles = require('./util/commonfiles');
+const data = require('./data/airlines.json');
 
 app = express();
 //Create express object
@@ -43,47 +44,54 @@ app.post("/FlightAPI", function (req, res) {
                 let intentFrom = req.body.IntentName;
                 var url = '';
 
-                if (intentFrom === 'FlightIntent.CancelIntent') {
+                if (intentFrom === 'FlightIntent.RescheduleFlight') {
                     let cancelledDate = req.body.CancelledDate;
-                    url = commonFiles.APIList[intentFrom](cancelledDate);
+                    url = flightData.DataProcess[intentFrom](cancelledDate);
                     console.log(url);
                 }
-                else if (intentFrom === 'FlightIntent.PNRStatus') {
+                else if (intentFrom === 'FlightIntent.FlightFacilities') {
                     let pnrNumber = req.body.PNRNumber;
                     url = commonFiles.APIList[intentFrom](pnrNumber);
                     console.log(url);
                 }
-                else if (intentFrom === 'FlightIntent.TrainRoute') {
+                else if (intentFrom === 'FlightIntent.FlightCheckIn') {
                     let trainNumber = req.body.TrainNumber;
                     url = commonFiles.APIList[intentFrom](trainNumber);
                     console.log(url);
                 }
-                else if (intentFrom === 'FlightIntent.GetStationCode') {
+                else if (intentFrom === 'FlightIntent.CancelFlight') {
+                    console.log(data);
+                    console.log(data[0]);
+                    // let stationName = req.body.StationName;
+                    // url = commonFiles.APIList[intentFrom](stationName);
+                    // console.log(url);
+                }
+                else if (intentFrom === 'FlightIntent.FlightStatus') {
                     let stationName = req.body.StationName;
                     url = commonFiles.APIList[intentFrom](stationName);
                     console.log(url);
                 }
 
-                var options = {
-                    url: url,
-                    method: 'GET',
-                    header: commonFiles.headerTemplate(),
-                    body: '',
-                    json: true
-                };
+                // var options = {
+                //     url: url,
+                //     method: 'GET',
+                //     header: commonFiles.headerTemplate(),
+                //     body: '',
+                //     json: true
+                // };
 
-                requestAPI(options, function (error, response, body) {
-                    if (error) {
-                        console.dir(error);
-                        return
-                    }
-                    else {
-                        console.log('status code:' + response.statusCode);
+                // requestAPI(options, function (error, response, body) {
+                //     if (error) {
+                //         console.dir(error);
+                //         return
+                //     }
+                //     else {
+                //         console.log('status code:' + response.statusCode);
 
-                        console.log('Inside data process');
-                        firstfn(false, body);
-                    }
-                });
+                //         console.log('Inside data process');
+                //         firstfn(false, body);
+                //     }
+                // });
             }],
             function (err, result) {
                 console.log('Inside Final Response Send of Flight API');

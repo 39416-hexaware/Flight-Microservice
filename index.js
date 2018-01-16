@@ -59,7 +59,7 @@ app.post("/FlightAPI", function (req, res) {
                     url = commonFiles.APIList[intentFrom](trainNumber);
                     console.log(url);
                 }
-                else if (intentFrom === 'FlightIntent.CancelFlight' || intentFrom === 'FlightIntent.FlightStatus') {
+                else if (intentFrom === 'FlightIntent.CancelFlight' || intentFrom === 'FlightIntent.FlightStatus' || intentFrom === 'FlightIntent.RescheduleFlight') {
                     let ticketNumber = req.body.TicketNumber;
                     console.log(ticketNumber);
                     let arrIndex = data.result.findIndex(x => x.ticketnumber == ticketNumber);

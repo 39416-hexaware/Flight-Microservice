@@ -60,13 +60,13 @@ app.post("/FlightAPI", function (req, res) {
                     console.log(url);
                 }
                 else if (intentFrom === 'FlightIntent.CancelFlight') {
-                    let ticketNumber = req.body.TicketNumber;
+                    let ticketNumber = req.body.TicketNumber;                    
                     console.log(data);
                     console.log(ticketNumber);
-                    console.log(data[0]);
-                    // let stationName = req.body.StationName;
-                    // url = commonFiles.APIList[intentFrom](stationName);
-                    // console.log(url);
+                    let arrIndex = data.result.findIndex(x => x.ticketnumber == ticketNumber);
+                    console.log(data.result[arrIndex]);
+
+                    firstfn(false, data.result[arrIndex]);
                 }
                 else if (intentFrom === 'FlightIntent.FlightStatus') {
                     let stationName = req.body.StationName;

@@ -10,7 +10,7 @@
         "flights": {
           "status": "Arrived",
           "departure": "New York",
-          "destination": "Los Angeles"
+          "destination": "Los Angeles",
           "totaltickets": "5"
         }
       },
@@ -34,7 +34,7 @@
         "flights": {
           "status": "Departed",
           "departure": "New Jersey",
-          "destination": "Washington D.C"
+          "destination": "Washington D.C",
           "totaltickets": "2"
         }
       },
@@ -58,7 +58,7 @@
         "flights": {
           "status": "Late",
           "departure": "New Delhi",
-          "destination": "Chennai"
+          "destination": "Chennai",
           "totaltickets": "15"
         }
       },
@@ -82,7 +82,7 @@
         "flights": {
           "status": "Delayed",
           "departure": "Canberra",
-          "destination": "Dubai"
+          "destination": "Dubai",
           "totaltickets": "3"
         }
       },
@@ -106,7 +106,7 @@
         "flights": {
           "status": "On Boarding",
           "departure": "London",
-          "destination": "Buenos Aires"
+          "destination": "Buenos Aires",
           "totaltickets": "20"
         }
       },
@@ -130,7 +130,7 @@
         "flights": {
           "status": "Check In",
           "departure": "Sao Paul",
-          "destination": "Tokyo"
+          "destination": "Tokyo",
           "totaltickets": "8"
         }
       },
@@ -154,7 +154,7 @@
         "flights": {
           "status": "Cancelled",
           "departure": "Mumbai",
-          "destination": "Sydney"
+          "destination": "Sydney",
           "totaltickets": "9"
         }
       },
@@ -178,7 +178,7 @@
         "flights": {
           "status": "Cancelled",
           "departure": "Wellington",
-          "destination": "Beijing"
+          "destination": "Beijing",
           "totaltickets": "12"
         }
       },
@@ -202,7 +202,7 @@
         "flights": {
           "status": "Arrived",
           "departure": "Mumbai",
-          "destination": "Kolkata"
+          "destination": "Kolkata",
           "totaltickets": "50"
         }
       },
@@ -226,7 +226,7 @@
         "flights": {
           "status": "Delayed",
           "departure": "Amsterdam",
-          "destination": "Ceylon"
+          "destination": "Ceylon",
           "totaltickets": "5"
         }
       },

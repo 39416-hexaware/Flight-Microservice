@@ -44,12 +44,7 @@ app.post("/FlightAPI", function (req, res) {
                 let intentFrom = req.body.IntentName;
                 var url = '';
 
-                if (intentFrom === 'FlightIntent.RescheduleFlight') {
-                    let cancelledDate = req.body.CancelledDate;
-                    url = flightData.DataProcess[intentFrom](cancelledDate);
-                    console.log(url);
-                }
-                else if (intentFrom === 'FlightIntent.FlightFacilities') {
+                if (intentFrom === 'FlightIntent.FlightFacilities') {
                     let pnrNumber = req.body.PNRNumber;
                     url = commonFiles.APIList[intentFrom](pnrNumber);
                     console.log(url);

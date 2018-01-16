@@ -37,7 +37,7 @@ app.post("/FlightAPI", function (req, res) {
         console.log(getJSON);
         
         //Write JSON
-        commonFiles.writeJSON();
+        commonFiles.writeJSON(getJSON);
 
         console.log('Flight Book Ticket');
 

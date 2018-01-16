@@ -4,7 +4,7 @@ var bodyParser = require('body-parser');
 var requestAPI = require('request');
 var async = require('async');
 const commonFiles = require('./util/commonfiles');
-var data = require('./data/airlines.json');
+const data = require('./data/airlines.json');
 
 app = express();
 //Create express object
@@ -60,7 +60,9 @@ app.post("/FlightAPI", function (req, res) {
                     console.log(url);
                 }
                 else if (intentFrom === 'FlightIntent.CancelFlight') {
+                    let ticketNumber = req.body.TicketNumber;
                     console.log(data);
+                    console.log(ticketNumber);
                     console.log(data[0]);
                     // let stationName = req.body.StationName;
                     // url = commonFiles.APIList[intentFrom](stationName);

@@ -75,17 +75,20 @@ var BookFlightTicket = function (boardingPoint, destination, travelDate, noOfTic
 
 function writeJSON(JSONobj) {
     console.log('Inside json write');
-    obj.result.push(JSONobj);
+    // var obj = {
+    //     result: []
+    // };
+    // obj.result.push(JSONobj);
 
-    var json = JSON.stringify(obj);
+    // var json = JSON.stringify(obj);
 
     fs.readFile('../data/airlines.json', 'utf8', function readFileCallback(err, data) {
         if (err) {
             console.log(err);
         } else {
-            obj = JSON.parse(data); //now it an object
+            var obj = JSON.parse(data); //now it an object
             obj.result.push(JSONobj); //add some data
-            json = JSON.stringify(obj); //convert it back to json
+            var json = JSON.stringify(obj); //convert it back to json
             fs.writeFile('../data/airlines.json', json, 'utf8', callback); // write it back 
         }
     });

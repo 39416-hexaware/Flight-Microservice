@@ -4,7 +4,7 @@ var bodyParser = require('body-parser');
 var requestAPI = require('request');
 var async = require('async');
 const commonFiles = require('./util/commonfiles');
-const data = require('./data/airlines.json');
+var data = require('./data/airlines.json');
 
 app = express();
 //Create express object

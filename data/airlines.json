@@ -12,7 +12,8 @@
           "on time": 561,
           "total": 752,
           "delayed": 186,
-          "diverted": 0
+          "diverted": 0,
+          "status": "Arrived"
         },
         "# of delays": {
           "late aircraft": 18,
@@ -52,7 +53,8 @@
           "on time": 1034,
           "total": 1266,
           "delayed": 225,
-          "diverted": 0
+          "diverted": 0,
+          "status": "Departed"
         },
         "# of delays": {
           "late aircraft": 46,
@@ -92,7 +94,8 @@
           "on time": 490,
           "total": 593,
           "delayed": 101,
-          "diverted": 1
+          "diverted": 1,
+          "status": "Late"
         },
         "# of delays": {
           "late aircraft": 25,
@@ -132,7 +135,8 @@
           "on time": 151,
           "total": 203,
           "delayed": 48,
-          "diverted": 0
+          "diverted": 0,
+          "status": "Delayed"
         },
         "# of delays": {
           "late aircraft": 10,
@@ -172,7 +176,8 @@
           "on time": 793,
           "total": 947,
           "delayed": 147,
-          "diverted": 2
+          "diverted": 2,
+          "status": "On Boarding"
         },
         "# of delays": {
           "late aircraft": 26,
@@ -212,7 +217,8 @@
           "on time": 591,
           "total": 750,
           "delayed": 157,
-          "diverted": 1
+          "diverted": 1,
+          "status": "Check In"
         },
         "# of delays": {
           "late aircraft": 24,
@@ -252,7 +258,8 @@
           "on time": 9913,
           "total": 12276,
           "delayed": 2144,
-          "diverted": 66
+          "diverted": 66,
+          "status": "Cancelled"
         },
         "# of delays": {
           "late aircraft": 601,
@@ -292,7 +299,8 @@
           "on time": 491,
           "total": 576,
           "delayed": 82,
-          "diverted": 0
+          "diverted": 0,
+          "status": "Cancelled"
         },
         "# of delays": {
           "late aircraft": 18,
@@ -332,7 +340,8 @@
           "on time": 675,
           "total": 835,
           "delayed": 149,
-          "diverted": 4
+          "diverted": 4,
+          "status": "Arrived"
         },
         "# of delays": {
           "late aircraft": 23,
@@ -372,7 +381,8 @@
           "on time": 511,
           "total": 658,
           "delayed": 146,
-          "diverted": 0
+          "diverted": 0,
+          "status": "Delayed"
         },
         "# of delays": {
           "late aircraft": 24,

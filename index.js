@@ -59,19 +59,11 @@ app.post("/FlightAPI", function (req, res) {
                     url = commonFiles.APIList[intentFrom](trainNumber);
                     console.log(url);
                 }
-                else if (intentFrom === 'FlightIntent.CancelFlight') {
-                    let ticketNumber = req.body.TicketNumber;                    
-                    console.log(data);
+                else if (intentFrom === 'FlightIntent.CancelFlight' || intentFrom === 'FlightIntent.FlightStatus') {
+                    let ticketNumber = req.body.TicketNumber;
                     console.log(ticketNumber);
                     let arrIndex = data.result.findIndex(x => x.ticketnumber == ticketNumber);
-                    console.log(data.result[arrIndex]);
-
                     firstfn(false, data.result[arrIndex]);
-                }
-                else if (intentFrom === 'FlightIntent.FlightStatus') {
-                    let stationName = req.body.StationName;
-                    url = commonFiles.APIList[intentFrom](stationName);
-                    console.log(url);
                 }
 
                 // var options = {

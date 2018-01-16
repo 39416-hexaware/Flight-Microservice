@@ -4,8 +4,7 @@
   "description": "Flight Microservice",
   "main": "index.js",
   "scripts": {
-    "start": "start index.js",
-    "stop": "stop all"
+    "start": "node index.js"
   },
   "author": "Mubashshir Mohammed A",
   "license": "ISC",

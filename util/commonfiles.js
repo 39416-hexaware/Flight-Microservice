@@ -82,14 +82,15 @@ function writeJSON(JSONobj) {
 
     // var json = JSON.stringify(obj);
 
-    fs.readFile('../data/airlines.json', 'utf8', function readFileCallback(err, data) {
+    fs.readFile('data/airlines.json', 'utf8', function readFileCallback(err, data) {
         if (err) {
             console.log(err);
         } else {
+            console.log('writing');
             var obj = JSON.parse(data); //now it an object
             obj.result.push(JSONobj); //add some data
             var json = JSON.stringify(obj); //convert it back to json
-            fs.writeFile('../data/airlines.json', json, 'utf8', callback); // write it back 
+            fs.writeFile('data/airlines.json', json, 'utf8'); // write it back 
         }
     });
 }

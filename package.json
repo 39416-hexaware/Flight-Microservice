@@ -4,7 +4,7 @@
   "description": "Flight Microservice",
   "main": "index.js",
   "scripts": {
-    "start": "pm2 start index.js",
+    "start": "pm2 start index.js --name FlightMicroService",
     "stop": "pm2 stop FlightMicroService"
 
   },

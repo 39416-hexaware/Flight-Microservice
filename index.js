@@ -50,22 +50,27 @@ app.post("/FlightAPI", function (req, res) {
                 let intentFrom = req.body.IntentName;
                 var url = '';
 
-                if (intentFrom === 'FlightIntent.FlightFacilities') {
-                    let pnrNumber = req.body.PNRNumber;
-                    url = commonFiles.APIList[intentFrom](pnrNumber);
-                    console.log(url);
-                }
-                else if (intentFrom === 'FlightIntent.FlightCheckIn') {
-                    let trainNumber = req.body.TrainNumber;
-                    url = commonFiles.APIList[intentFrom](trainNumber);
-                    console.log(url);
-                }
-                else if (intentFrom === 'FlightIntent.CancelFlight' || intentFrom === 'FlightIntent.FlightStatus' || intentFrom === 'FlightIntent.RescheduleFlight') {
-                    let ticketNumber = req.body.TicketNumber;
-                    console.log(ticketNumber);
-                    let arrIndex = data.result.findIndex(x => x.ticketnumber == ticketNumber);
-                    firstfn(false, data.result[arrIndex]);
-                }
+                // if (intentFrom === 'FlightIntent.FlightFacilities') {
+                //     let pnrNumber = req.body.PNRNumber;
+                //     url = commonFiles.APIList[intentFrom](pnrNumber);
+                //     console.log(url);
+                // }
+                // else if (intentFrom === 'FlightIntent.FlightCheckIn') {
+                //     let trainNumber = req.body.TrainNumber;
+                //     url = commonFiles.APIList[intentFrom](trainNumber);
+                //     console.log(url);
+                // }
+                // else if (intentFrom === 'FlightIntent.CancelFlight' || intentFrom === 'FlightIntent.FlightStatus' || intentFrom === 'FlightIntent.RescheduleFlight') {
+                //     let ticketNumber = req.body.TicketNumber;
+                //     console.log(ticketNumber);
+                //     let arrIndex = data.result.findIndex(x => x.ticketnumber == ticketNumber);
+                //     firstfn(false, data.result[arrIndex]);
+                // }
+                
+                let ticketNumber = req.body.TicketNumber;
+                console.log(ticketNumber);
+                let arrIndex = data.result.findIndex(x => x.ticketnumber == ticketNumber);
+                firstfn(false, data.result[arrIndex]);
 
                 // var options = {
                 //     url: url,

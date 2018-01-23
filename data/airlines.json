@@ -22,6 +22,11 @@
       "carrier": {
         "code": "AA",
         "name": "American Airlines Inc."
+      },
+      "facilities": {
+        "class" : "First Class",
+        "food": "Unlimited",
+        "entertainment" : "Complete"
       }
     },
     {
@@ -46,6 +51,11 @@
       "carrier": {
         "code": "AA",
         "name": "American Airlines Inc."
+      },
+      "facilities": {
+        "class" : "Business Class",
+        "food": "Unlimited",
+        "entertainment" : "Complete"
       }
     },
     {
@@ -70,6 +80,11 @@
       "carrier": {
         "code": "AA",
         "name": "American Airlines Inc."
+      },
+      "facilities": {
+        "class" : "Economy Class",
+        "food": "Limited",
+        "entertainment" : "Complete"
       }
     },
     {
@@ -94,6 +109,11 @@
       "carrier": {
         "code": "AA",
         "name": "American Airlines Inc."
+      },
+      "facilities": {
+        "class" : "Economy Class",
+        "food": "Limited",
+        "entertainment" : "Complete"
       }
     },
     {
@@ -118,6 +138,11 @@
       "carrier": {
         "code": "AA",
         "name": "American Airlines Inc."
+      },
+      "facilities": {
+        "class" : "Executive Class",
+        "food": "Limited",
+        "entertainment" : "Complete"
       }
     },
     {
@@ -142,6 +167,11 @@
       "carrier": {
         "code": "AA",
         "name": "American Airlines Inc."
+      },
+      "facilities": {
+        "class" : "First Class",
+        "food": "Unlimited",
+        "entertainment" : "Complete"
       }
     },
     {
@@ -166,6 +196,11 @@
       "carrier": {
         "code": "AA",
         "name": "American Airlines Inc."
+      },
+      "facilities": {
+        "class" : "First Class",
+        "food": "Unlimited",
+        "entertainment" : "Complete"
       }
     },
     {
@@ -190,6 +225,11 @@
       "carrier": {
         "code": "AA",
         "name": "American Airlines Inc."
+      },
+      "facilities": {
+        "class" : "Business Class",
+        "food": "Unlimited",
+        "entertainment" : "Complete"
       }
     },
     {
@@ -214,6 +254,11 @@
       "carrier": {
         "code": "AA",
         "name": "American Airlines Inc."
+      },
+      "facilities": {
+        "class" : "First Class",
+        "food": "Unlimited",
+        "entertainment" : "Complete"
       }
     },
     {
@@ -238,6 +283,11 @@
       "carrier": {
         "code": "AA",
         "name": "American Airlines Inc."
+      },
+      "facilities": {
+        "class" : "Economy Class",
+        "food": "Limited",
+        "entertainment" : "Complete"
       }
     }
   ]
